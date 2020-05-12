@@ -1,0 +1,13 @@
+{
+    "name": "pixigameloop",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "tsc"
+    },
+    "author": "",
+    "license": "Public Domain",
+    "devDependencies": {
+        "pixi.js": "^5.2.4"
+    }
+}
