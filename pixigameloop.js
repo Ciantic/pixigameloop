@@ -3,8 +3,8 @@
  * @author Jari Otto Oskari Pennanen
  * @license I consider this work in public domain
  *
- * This is mostly just demonstration how to use "Fix your timestep!" by Glenn
- * Fiedler
+ * This is just demonstration how to implement game loop defined in article "Fix
+ * your timestep!" by Glenn Fiedler
  *
  * See https://gafferongames.com/post/fix_your_timestep/
  */
@@ -90,7 +90,7 @@ app.ticker.add(() => {
     };
     render(renderState); // Try putting "currentState" here and see how the motion becomes jerky
     debugTextElement.text = `
-        Demonstration of "Fix your timestep!" by Glenn Fiedler
+        Demonstration of "Fix your timestep!"
         FPS: ${Math.round(app.ticker.FPS)}
         accumulator: ${accumulator}
         frame time: ${frameTime}
