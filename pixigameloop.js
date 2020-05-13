@@ -73,7 +73,7 @@ app.ticker.add(() => {
     if (frameTime > MAX_FRAME_TIME)
         frameTime = MAX_FRAME_TIME;
     currentTime = newTime;
-    accumulator += frameTime;
+    accumulator += frameTime; // slow motion effect, multiply here with e.g. frameTime * 0.2
     while (accumulator >= DELTA_TIME) {
         previousState = currentState;
         currentState = integrate(currentState, totalTime, DELTA_TIME);
